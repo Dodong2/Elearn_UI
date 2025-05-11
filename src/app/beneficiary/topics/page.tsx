@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Comments from "@/components/Comments";
 /* icons */
 import { FiDownload } from 'react-icons/fi';
-import { BsChatSquareTextFill } from "react-icons/bs";
 
 const meeting = [
   { day: "APR 18", title: "Meeting #1", time: "10:00 – 11:30 AM" },
@@ -24,7 +23,6 @@ export const posts = [
       { name: "4Ps Guidelines.pdf", size: "2.58 MB", type: "PDF", icon: <FiDownload/> },
       { name: "4Ps members.doc", size: "1.38 MB", type: "DOC", icon: <FiDownload/> },
     ],
-    comments: [{ comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", icon: <BsChatSquareTextFill/>, }],
   },
 ];
 
@@ -95,7 +93,7 @@ export default function TopicLayout() {
                 ))}
               </div>
             )}
-            
+
             {/* Comments */}
             <Comments/>
 
