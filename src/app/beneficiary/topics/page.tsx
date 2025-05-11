@@ -41,15 +41,15 @@ export default function TopicLayout() {
       <Navbar />
 
       {/* Post input area */}
-      <div className="p-4 bg-gray-100 mt-2 rounded-md">
-        <div className="flex items-center gap-2">
+      <div className="p-2 bg-gray-100 mt-2 rounded-md">
+        <div className="grid grid-cols-[auto_1fr_auto] items-center gap-2 w-full">
           <div className="w-10 h-10 rounded-full bg-gray-300"></div>
           <input
             type="text"
             placeholder="Post Something / Create a discussions"
-            className="flex-1 p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500"
+            className="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 text-sm sm:text-base"
           />
-          <button className="text-xm cursor-pointer bg-gray-800 text-white px-3 py-1 rounded active:scale-95 transition-transform">
+          <button className="bg-gray-800 text-white px-3 py-2 rounded text-sm sm:text-base whitespace-nowrap">
             Publish
           </button>
         </div>
