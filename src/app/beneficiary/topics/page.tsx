@@ -12,7 +12,7 @@ const meeting = [
 ];
 
 /* contents for posts */
-export const posts = [
+ const posts = [
   {
     id: 1,
     author: "hv",
