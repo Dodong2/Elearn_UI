@@ -49,7 +49,7 @@ const ProgramItem = ({ text }: { text: string }) => (
 
 // Main Sidebar component
 // dito babaguhin design ng sidebar
-const Sidebar = ({ defaultOpen = true, items, programs = [] }: SidebarProps) => {
+const Sidebar = ({ defaultOpen = false, items, programs = [] }: SidebarProps) => {
   const [isOpen, setIsOpen] = useState(defaultOpen); // State para sa open/close ng sidebar (especially sa mobile)
 
   return (
