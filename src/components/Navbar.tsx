@@ -1,42 +1,35 @@
-"use client";
-/* hooks */
-import { useState } from "react";
-/* links */
-import Link from "next/link";
+import React from 'react';
 
-interface TabsProps {
-  href: string;
-  title: string;
-}
+type TabProps = {
+  activeTab: string;
+  setActiveTab: (key: string) => void;
+};
 
-const tabs: TabsProps[] = [
-  { title: "Updates", href: "/topic/updates" },
-  { title: "Meeting", href: "/topic/meeting" },
-  { title: "Intructors", href: "/topic/intructor" },
-];
+const Navbar: React.FC<TabProps> = ({ activeTab, setActiveTab }) => {
+  const tabs = [
+    { title: "Updates", key: "updates" },
+    { title: "Files", key: "meeting" },
+    { title: "Instructors", key: "instructors" },
+  ];
 
-
-const Navbar = () => {
-  const [activeTab, setActiveTab] = useState("Updates");
   return (
     <div className="bg-gray-100 flex justify-around text-sm font-medium rounded-b-sm">
-      {tabs.map((tab, index) => (
-        <Link key={index} href={tab.href}>
+      {tabs.map((tab) => (
         <button
-          onClick={() => setActiveTab(tab.title)}
+          key={tab.key}
+          onClick={() => setActiveTab(tab.key)}
           className={`py-2 px-4 relative transition-colors duration-200 cursor-pointer ${
-            activeTab === tab.title ? "text-black" : "text-gray-700 hover:text-black"
+            activeTab === tab.key ? "text-black" : "text-gray-700 hover:text-black"
           }`}
         >
           {tab.title}
-          {activeTab === tab.title && (
+          {activeTab === tab.key && (
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-black" />
           )}
         </button>
-        </Link>
       ))}
     </div>
   );
 };
 
-export default Navbar;
+export default Navbar

@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 /* icons */
 import { HiHome } from "react-icons/hi";
 import { FaCalendarAlt } from "react-icons/fa";
-import { IoMdPeople } from "react-icons/io";
+// import { IoMdPeople } from "react-icons/io";
 import { LuFileSpreadsheet } from "react-icons/lu";
-import { MdOutlineHelpOutline } from "react-icons/md";
+// import { MdOutlineHelpOutline } from "react-icons/md";
 import { MdOutlineFeedback } from "react-icons/md";
 
 export default function BeneficiaryLayout({ children }: { children: React.ReactNode }) {
@@ -15,10 +15,9 @@ export default function BeneficiaryLayout({ children }: { children: React.ReactN
   const sidebarItems = [
     { href: "/beneficiary", icon: <HiHome />, text: "Programs" },
     { href: "/calendar", icon: <FaCalendarAlt />, text: "Calendar" },
-    { href: "/meetings", icon: <IoMdPeople />, text: "Meetings" },
     { href: "/beneficiary/files", icon: <LuFileSpreadsheet />, text: "Files" },
-    { href: "/beneficiary/files", icon: <MdOutlineHelpOutline  />, text: "Help" },
-    { href: "/beneficiary/files", icon: <MdOutlineFeedback  />, text: "Feedback" },
+    // { href: "/beneficiary/files", icon: <MdOutlineHelpOutline  />, text: "Help" },
+    { href: "/beneficiary/feedback", icon: <MdOutlineFeedback  />, text: "Feedback" },
   ];
 
   // Optional section ng "Programs"
