@@ -40,7 +40,7 @@ export default function ActivityLog() {
             <tr>
               <td className="py-2 px-4">Carl Maxx</td>
               <td className="py-2 px-4">Upload</td>
-              <td className="py-2 px-4">Uploaded new file for "Topic #1"</td>
+              <td className="py-2 px-4">Uploaded new file for Topic #1</td>
               <td className="py-2 px-4">2025-05-03 16:45:21</td>
             </tr>
             <tr>
@@ -58,7 +58,7 @@ export default function ActivityLog() {
             <tr>
               <td className="py-2 px-4">Carl Maxx</td>
               <td className="py-2 px-4">Upload</td>
-              <td className="py-2 px-4">Uploaded new file for "Topic #1"</td>
+              <td className="py-2 px-4">Uploaded new file for Topic #1</td>
               <td className="py-2 px-4">2025-05-03 16:45:21</td>
             </tr>
             {/* End of Sample Data */}
