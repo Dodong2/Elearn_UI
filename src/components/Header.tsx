@@ -3,7 +3,15 @@ import { usePathname } from "next/navigation"
 
 const titles: Record<string, string> = {
     "/beneficiary": "Home",
-    "/beneficiary/files": "Files"
+    "/beneficiary/files": "Files",
+    "/beneficiary/feedback": "Feeback",
+    "/admin": "Dashboard",
+    "/admin/usermanage": "User Management",
+    "/admin/activities": "Activity Logs",
+    "/admin/programs": "Program Management",
+    "/admin/notifications": "Notification",
+    // "/admin/feedback": "",
+    // "/admin/": "",
 }
 
 const Header = () => {
